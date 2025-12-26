@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -6,18 +10,19 @@
 
   padding: 24px 16px;
 
-  border: 1px solid #f3f3f3;
+  border: 1px solid $color-border;
   border-radius: 8px;
 
   font-family: $font-main;
-  background-color: #fff;
+  background-color: $color;
   transition: border-color 0.3s;
   text-align: left;
+  box-sizing: border-box;
 
   &__image {
     width: 168px;
     height: 134px;
-    margin: 0 auto 24px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,16 +36,14 @@
 
   &__header {
     &-content {
-      margin-bottom: 16px;
+      margin: 0;
       font-size: 12px;
       line-height: 18px;
       font-weight: 500;
-      color: #060b35;
-      padding: 0;
+      color: $dark-blue;
     }
 
     &-code {
-      padding: 0;
       margin-bottom: 16px;
       font-size: 10px;
       font-weight: 400;
@@ -51,22 +54,19 @@
   }
 
   &__reviews {
-    padding: 0 16px 16px;
+    margin-bottom: 16px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: $grey;
-    font-size: 10px;
-    &-text {
-      margin: 0;
-    }
+   align-items: center;
+ font-size: 10px;
+      color: $grey;
+ line-height: 14px;
   }
 
   &__price-container {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    padding: 0 16px 16px;
+    margin-bottom: 16px;
   }
 
   &__price-label {
@@ -88,7 +88,7 @@
 
   &__button {
     margin: 0 auto;
-    width: 166px;
+    width: 100%;
     padding: 12px;
     text-align: center;
     text-transform: uppercase;
