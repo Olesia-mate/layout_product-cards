@@ -50,8 +50,8 @@
       font-size: 10px;
       font-weight: 400;
       line-height: 14px;
-      color: #616070;
-      left: 17px;
+      color:$color-code;
+     
     }
   }
 
@@ -98,19 +98,19 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color: white;
+    color:$color-white;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0%;
     border-radius: 5px;
-    border: 1px solid #00acdc;
-    background-color: #00acdc;
+    border: 1px solid $main-blue;
+    background-color: $main-blue;
 
     &:hover {
       color: $hover-blue;
       border-color: $main-blue;
-      background-color: white;
+      background-color:$color-white;
       transition: 0.5s;
     }
   }
